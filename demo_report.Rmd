@@ -1,0 +1,28 @@
+---
+title: "Demo R Markdown Report"
+author: "Kyle"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here's some **Markdown**
+
+```{r echo = FALSE}
+#Here's some R code
+print("hello world!")
+```
+
+```{r}
+x <-runif(1:100)
+hist(x)
+```
+
+```{r}
+example_num <- 57
+```
+
+As a demo, I can display the example number, which is `r example_num`. See, isn't that cool?
